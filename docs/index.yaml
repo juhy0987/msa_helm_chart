@@ -4,7 +4,7 @@ entries:
   - apiVersion: v2
     appVersion: "1.0.0"
     created: "2026-06-29T16:28:22.422079168+09:00"
-    description: authentication service (로그인/토큰 발급)
+    description: authentication service
     digest: 7a4469e8d712f1ee86ebc6fa4233a9a32597bfef4cc86fc472627eccc53b58a8
     name: auth-app
     type: application
@@ -15,7 +15,7 @@ entries:
   - apiVersion: v2
     appVersion: "1.0.0"
     created: "2026-06-29T16:28:22.422079168+09:00"
-    description: community service (게시판/댓글)
+    description: community service
     digest: 600e9edc897b5e71de6c3de5360e1927e356b9e059c3ec3c60d97b50df8f9038
     name: community-app
     type: application
@@ -26,7 +26,7 @@ entries:
   - apiVersion: v2
     appVersion: "1.0.0"
     created: "2026-06-29T16:28:22.422079168+09:00"
-    description: core business service (핵심 도메인 로직)
+    description: core business service
     digest: 678299a1fea676a5c1842f780e7150696231e71a750f8881c4fe41c25cb2ab63
     name: core-app
     type: application

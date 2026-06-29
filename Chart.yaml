@@ -1,0 +1,20 @@
+apiVersion: v2
+name: msa-platform
+description: auth + core + community
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+
+dependencies:
+  - name: auth-app
+    version: "0.1.0"
+    repository: "file://charts/auth"
+    condition: auth-app.enabled
+  - name: core-app
+    version: "0.1.0"
+    repository: "file://charts/core"
+    condition: core-app.enabled
+  - name: community-app
+    version: "0.1.0"
+    repository: "file://charts/community"
+    condition: community-app.enabled

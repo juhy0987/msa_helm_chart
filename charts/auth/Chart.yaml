@@ -1,0 +1,7 @@
+# charts/auth/Chart.yaml
+apiVersion: v2
+name: auth-app
+description: authentication service (로그인/토큰 발급)
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

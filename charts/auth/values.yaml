@@ -1,0 +1,19 @@
+# charts/auth/values.yaml
+replicaCount: 2
+
+image:
+  repository: myoli999/auth-app
+  tag: "1.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8001
+
+containerPort: 8001
+
+database:
+  writableUrl: "postgresql://scott:tiger@my-pg-cluster-rw:5432/auth_db"
+  readonlyUrl: "postgresql://scott:tiger@my-pg-cluster-ro:5432/auth_db"
+jwt:
+  secret: "change-me-in-prod"

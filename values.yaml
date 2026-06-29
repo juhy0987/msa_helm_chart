@@ -1,0 +1,32 @@
+# values.yaml  (umbrella)
+auth-app:
+  enabled: true
+  replicaCount: 2
+  image:
+    tag: "1.0"
+  service:
+    port: 8001
+  containerPort: 8001
+
+core-app:
+  enabled: true
+  replicaCount: 3
+  image:
+    tag: "1.0"
+  service:
+    port: 8002
+  containerPort: 8002
+  deps:
+    authUrl: "http://auth-app-service:8001"
+
+community-app:
+  enabled: true
+  replicaCount: 2
+  image:
+    tag: "1.0"
+  service:
+    port: 8003
+  containerPort: 8003
+  deps:
+    authUrl: "http://auth-app-service:8001"
+    coreUrl: "http://core-app-service:8002"

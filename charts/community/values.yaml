@@ -1,0 +1,21 @@
+# charts/community/values.yaml
+replicaCount: 2
+
+image:
+  repository: myoli999/community-app
+  tag: "1.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8003
+
+containerPort: 8003
+
+database:
+  writableUrl: "postgresql://scott:tiger@my-pg-cluster-rw:5432/community_db"
+  readonlyUrl: "postgresql://scott:tiger@my-pg-cluster-ro:5432/community_db"
+
+deps:
+  authUrl: "http://auth-app-service:8001"
+  coreUrl: "http://core-app-service:8002"

@@ -30,3 +30,16 @@ spec:
           value: {{ .Values.deps.authUrl | quote }}
         - name: CORE_URL
           value: {{ .Values.deps.coreUrl | quote }}
+        
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: {{ .Values.containerPort }}
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: {{ .Values.containerPort }}
+          initialDelaySeconds: 3
+          periodSeconds: 5

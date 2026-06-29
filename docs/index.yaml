@@ -3,9 +3,9 @@ entries:
   auth-app:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-29T16:20:59.942523961+09:00"
+    created: "2026-06-29T16:25:29.216275159+09:00"
     description: authentication service (로그인/토큰 발급)
-    digest: 15407ae9fb44a1c695b1046df3e0492c8fb755ecdc45473ad0306ba62210e590
+    digest: 7a4469e8d712f1ee86ebc6fa4233a9a32597bfef4cc86fc472627eccc53b58a8
     name: auth-app
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   community-app:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-29T16:20:59.942662541+09:00"
+    created: "2026-06-29T16:25:29.216410303+09:00"
     description: community service (게시판/댓글)
-    digest: 0e88e72a9a150baf4b48bf1e12dc2b5b930dd0e9d3383e1d48e0275b5998568d
+    digest: 600e9edc897b5e71de6c3de5360e1927e356b9e059c3ec3c60d97b50df8f9038
     name: community-app
     type: application
     urls:
@@ -25,12 +25,12 @@ entries:
   core-app:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-29T16:20:59.942797926+09:00"
+    created: "2026-06-29T16:25:29.216543013+09:00"
     description: core business service (핵심 도메인 로직)
-    digest: 35da4ef71cb4885968a3b4276298a9007da60931ba82e38f4de9f4cc0146e534
+    digest: 678299a1fea676a5c1842f780e7150696231e71a750f8881c4fe41c25cb2ab63
     name: core-app
     type: application
     urls:
     - https://juhy0987.github.io/msa-helm-chart/core-app-0.1.0.tgz
     version: 0.1.0
-generated: "2026-06-29T16:20:59.942261186+09:00"
+generated: "2026-06-29T16:25:29.216056968+09:00"

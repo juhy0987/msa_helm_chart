@@ -28,3 +28,16 @@ spec:
           value: {{ .Values.database.readonlyUrl | quote }}
         - name: JWT_SECRET
           value: {{ .Values.jwt.secret | quote }}
+        
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: {{ .Values.containerPort }}
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: {{ .Values.containerPort }}
+          initialDelaySeconds: 3
+          periodSeconds: 5

@@ -13,8 +13,8 @@ service:
 containerPort: 8003
 
 database:
-  writableUrl: "postgresql://scott:tiger@my-pg-cluster-rw:5432/community_db"
-  readonlyUrl: "postgresql://scott:tiger@my-pg-cluster-ro:5432/community_db"
+  writableUrl: "postgresql://scott:tiger@localhost:5432/community_db"
+  readonlyUrl: "postgresql://scott:tiger@localhost:5432/community_db"
 
 deps:
   authUrl: "http://auth-app-service:8001"
